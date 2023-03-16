@@ -1,0 +1,25 @@
+.project-detail-bth {
+  display: flex;
+  column-gap: 10px;
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: calc((100vw - 320px) / (1400 - 320) * (16 - 12) + 12px);
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  background-color: var(--white-bg);
+  color: var(--black-bg);
+  border-radius: 5px;
+  border: 1px solid #171718;
+  border-color: var(--text-color);
+  padding: calc((100vw - 320px) / (1400 - 320) * (12 - 8) + 8px)
+    calc((100vw - 320px) / (1400 - 320) * (20 - 14) + 14px);
+  transition: background-color 0.2s ease-in;
+}
+.project-detail-bth:hover {
+  background-color: #5c62ec;
+  color: var(--header-text);
+}
+.project-detail-bth:active {
+  position: relative;
+  top: 1px;
+}

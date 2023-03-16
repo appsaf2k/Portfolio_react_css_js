@@ -1,0 +1,62 @@
+/* SETTINGS NavBar */
+
+.nav {
+  max-width: 100%;
+  line-height: 100%;
+  padding: 20px 0px;
+
+  background-color: var(--dark-bg);
+  color: var(--header-text);
+  border: 1px solid var(--black-border);
+}
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: calc((100vw - 320px) / (1400 - 320) * (30 - 20) + 20px);
+  row-gap: calc((100vw - 320px) / (1400 - 320) * (20 - 12) + 12px);
+  flex-wrap: wrap;
+}
+.nav-logo {
+  font-family: "Poppins", sans-serif;
+  font-size: calc((100vw - 320px) / (1400 - 320) * (24 - 20) + 20px);
+  margin-right: auto;
+  color: var(--header-text);
+}
+.nav-logo strong {
+  transition: color 0.2s ease-in;
+  font-weight: 700;
+}
+.nav-logo strong:hover {
+  color: var(--accent-color);
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  line-height: 24px;
+}
+.nav-list__link {
+  color: var(--header-text);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: calc((100vw - 320px) / (1400 - 320) * (16 - 14) + 14px);
+  line-height: 24px;
+
+  transition: color 0.2s ease-in;
+}
+.nav-list__link:hover {
+  color: var(--accent-color);
+}
+/* Undercsore for nav-list__link */
+.nav-list__link--active {
+  position: relative;
+}
+.nav-list__link--active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 1px solid var(--accent-color);
+  width: 100%;
+  left: 0px;
+}

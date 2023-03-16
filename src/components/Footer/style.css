@@ -1,0 +1,29 @@
+/* SETTINGS Footer socials */
+.footer {
+  width: 100%;
+  padding: calc((100vw - 320px) / (1400 - 320) * (60 - 30) + 30px) 0
+    calc((100vw - 320px) / (1400 - 320) * (50 - 20) + 20px);
+  background-color: var(--black-bg);
+  border: 1px solid var(--black-border);
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  margin-bottom: calc((100vw - 320px) / (1400 - 320) * (27 - 16) + 16px);
+}
+.social__item {
+  max-width: calc((100vw - 320px) / (1400 - 320) * (38 - 24) + 24px);
+}
+.social__item:hover {
+  opacity: 0.2;
+}
+.parag {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: var(--header-text);
+  line-height: 150%;
+  letter-spacing: -0.5px;
+}
