@@ -1,4 +1,1 @@
-React
-React-router-dom
-JavaScript
-CSS
+# React, React-router-dom, JavaScript, CSS
